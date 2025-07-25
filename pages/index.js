@@ -3,15 +3,15 @@ function Home() {
         <div>
             <h1>O curso.dev é bom...</h1>
             <hr/>
-            <h6>❤️ Só não é tão bom quanto ter você aqui comigo ❤️</h6>
-            <hr/>
-            <hr/>
-            <hr/>
+            <h3>❤️ Só não é tão bom quanto ter você aqui comigo ❤️</h3>
+            <br/>
+            <br/>
+            <br/>
             <p>tubiraum daum</p>
             <p>tubiraum daum</p>
-            <hr/>
-            <hr/>
-            <hr/>
+            <br/>
+            <br/>
+            <br/>
             <h2>Eu te amo amor</h2>
         </div>
     )
