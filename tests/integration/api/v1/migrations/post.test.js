@@ -1,9 +1,8 @@
-import database from "infra/database";
 import orchestrator from "tests/orchestrator.js";
 
 beforeAll(async () => {
   await orchestrator.waitForAllServices();
-  await database.query("DROP SCHEMA public CASCADE; CREATE SCHEMA public;");
+  await orchestrator.clearDatabase();
 });
 
 describe("POST /api/v1/migrations", () => {
@@ -34,7 +33,6 @@ describe("POST /api/v1/migrations", () => {
         expect(Array.isArray(response2Body)).toBe(true);
         expect(response2Body.length).toBe(0);
       });
-
     });
   });
 });
